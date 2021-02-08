@@ -1,0 +1,268 @@
+% Slide-3.2
+\begin{frame}[t]{Measures of Central Tendency}
+		\begin{itemize}
+		\item Average (Mean)
+		\item Median
+		\item Mode
+		\item Other infrequently used measures
+		\begin{itemize}
+			\item Geometric Mean
+			\item Harmonic Mean
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+% Slide-3.2.1
+\begin{frame}[t]{Mean}
+	\begin{itemize}
+		\item Single best value to represent data
+		\item Need not actually be data point itself
+		\item Considers every point in data
+		\item Discrete as well as continuous data
+		\item Vulnerable to outliers
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[t]{Arithmetic Mean of a Dataset}
+	\begin{itemize}
+		\item The arithmetic mean is calculated as the sum of the values 
+		divided by the total number of values, referred to as $n$.\\ 
+		$$AM =  \frac{(x_1 + x_2 + … + x_n)}{n} $$
+		
+		\item A more convenient way to calculate the arithmetic mean is to 
+		calculate the sum of the values and to multiply it by the reciprocal of 
+		the number of values ($\frac{1}{n}$) \\ 
+		$$ AM = (\frac{1}{n}) \times (x_1 + x_2 + … + x_n) $$
+		\item The arithmetic mean is appropriate when all values in the data 
+		sample have the same units of measure, e.g. all numbers are heights, or 
+		dollars, or miles, etc.
+		\item When calculating the arithmetic mean, the values can be positive, 
+		negative, or zero.
+	\end{itemize}
+\end{frame}
+
+% Slide-3.2.2
+\begin{frame}[t]{Arithmetic Mean of a Dataset--1}
+	\textbf{Example:} Five systolic blood pressures (mmHg) (n = 5) \\ 
+	120, 80, 90, 110, 95
+	
+	$$
+	Mean = 
+	 \frac{120+80+90+110+95}{5}
+	= \frac{495}{5}
+	= 99mmHg 
+	$$
+	
+	$$
+	Mean = \overline{x}  = \frac{\sum x_i }{n}
+	$$
+	
+	\begin{itemize}
+		\item $	\overline{x} = $ mean of a dataset
+		\item $	x_i =$ data points 
+		\item $	n =$ number of sample 
+	\end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Arithmetic Mean of a Dataset--2}
+	\textbf{Example:} Five systolic blood pressures (mmHg) (n = 5) \\ 
+	120, 80, 90, 110, 95
+	
+\[
+\begin{array}{l}
+AM=	\frac{1}{5}(120)+\frac{1}{5}(80)+\frac{1}{5}(90)+\frac{1}{5}(110)+
+\frac{1}{5}(90) \\ 
+= \frac{1}{5}(120+80+90+110+95) \\ 
+= \frac{1}{5}(495) \\ 
+= 99mmHg
+\end{array}
+\]
+
+\end{frame}
+
+
+
+% Slide-n
+% Slide-n
+\begin{frame}[t]{Population vs Sample Mean}
+	\begin{center}
+		\begin{tabular}{|c|c|} 
+			\hline 
+			Population & Sample \\ 
+			\hline 
+			$\mu  = \frac{\sum_{i=1}^{N} x_i }{N}$ & $\overline{x}  = 
+			\frac{\sum_{i=1}^{n} 
+			x_i }{n}$ \\
+		 \hline
+		$\mu$ = number of items in the population  & $\overline{x}$ = number of 
+		items in the sample \\ 
+		\hline 
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+
+% Slide-3.2.3
+\begin{frame}[t]{Impact of Outliers}
+	\textbf{Example:} Five systolic blood pressures (mmHg) (n = 6) \\ 
+	120, 80, 90, 110, 95, 500
+	
+	$$
+	Mean = 
+	\frac{120+80+90+110+95+500}{6}
+	= \frac{995}{6}
+	= \fbox{165.83mmHg}
+	$$
+	
+	$$
+	Mean = \overline{x}  = \frac{\sum x_i }{n}
+	$$
+	
+	\begin{itemize}
+		\item $	\overline{x} = $ mean of a dataset
+		\item $	x_i =$ data points 
+		\item $	n =$ number of sample 
+	\end{itemize}
+\end{frame}
+
+
+
+% Slide-3.2.4
+\begin{frame}[t]{Median}
+	\begin{itemize}
+		\item Value such that 50% of data on
+		either side
+		\item Sort data, then use middle element
+		\item For even number of data points,
+		average two middle elements
+		\item More robust to outliers than mean
+		\item However does not consider every
+		data point
+		\item Makes sense for ordinal data (data
+		that can be sorted)
+	\end{itemize}
+\end{frame}
+
+% Slide-3.2.5
+\begin{frame}[t]{Median of a Dataset: Odd Sample Size}
+	\textbf{Example:} Find the median systolic blood pressures (mmHg) (n=5) \\ 
+	120, 80, 90, 110, 95 \pause 
+	\begin{enumerate}
+		\item \textbf{Sort Data:}  80, 90, 95, 110, 120  \pause 
+		\item \textbf{Find the Middle Value:}  \fbox{95}
+	\end{enumerate}
+\end{frame}
+
+
+% Slide-3.2.5
+\begin{frame}[t]{Median of a Dataset: Even Sample Size}
+	\textbf{Example:} Find the median systolic blood pressures (mmHg) (n=6) \\ 
+	120, 80, 90, 110, 95, 85 \pause 
+	\begin{enumerate}
+		\item \textbf{Sort Data:}  80, 85, 90, 95, 110, 120  \pause 
+		\item \textbf{Compute the Average of Middle 2 Values:}  
+		$\frac{90+95}{2} = 137.5 $ \pause 
+		\item \textbf{Computed Mean is the Median:}  \fbox{137.5}
+	\end{enumerate}
+\end{frame}
+
+
+% Slide-3.2.6
+\begin{frame}[t]{Impact of Outliers}
+	\textbf{Example:} Five systolic blood pressures (mmHg) (n = 5) \\ 
+	120, 80, 90, 110, 500 \pause 
+		\begin{enumerate}
+		\item \textbf{Sort Data:}  80, 90,110, 120, 500  \pause 
+		\item \textbf{Find the Middle Value:}  \fbox{110}
+	\end{enumerate}
+\end{frame}
+
+% Slide-3.2.7
+\begin{frame}[t]{Mode}
+	\begin{itemize}
+		\item Most frequent value in dataset
+		\item Highest bar in histogram
+		\item Winner in elections
+		\item Typically used with categorical data
+		\item Unlike mean or median, mode need not
+		be unique
+		\item Not great for continuous data
+		\item Continuous data needs to be discretized
+		and binned first
+	\end{itemize}
+\end{frame}
+
+% Slide-3.2.8 
+\begin{frame}[t]{Mode of a Dataset}
+\begin{itemize}
+	\item \textbf{Candidate:} Abul, Akhi, Babul, Bithi, Dabul, Doli
+	\item \textbf{Votes:} 60, 20, 10, 40, 50, 30
+\end{itemize} 
+Mode represents the most frequent value in the data, so the winner is \fbox{60}
+
+\end{frame}
+
+% Slide-3.2.9 
+\begin{frame}[t]{Other Measures of Central Tendency}
+	\begin{itemize}
+		\item Geometric mean
+		\begin{itemize}
+			\item[--] Great for summarizing ratios
+			\item[--] Compound Annual Growth Rate
+			(CAGR)
+		\end{itemize}
+	\end{itemize}
+
+\begin{itemize}
+	\item Harmonic mean
+	\begin{itemize}
+		\item[--] Great for summarizing rates
+		\item[--] Resistors in parallel
+		\item[--] P/E ratios in finance
+	\end{itemize}
+\end{itemize}
+\end{frame}
+
+
+% Slide-n
+\begin{frame}[t]{Geometric Mean of a Dataset}
+	\begin{itemize}
+		\item The geometric mean is calculated as the $nth$ root of the 
+		product 
+		of all values, where $n$ is the number of values. 
+		$$GM = 
+		\sqrt{(x_1\times  x_2 \times … \times x_n)}$$
+		
+		\item For example, if the data contains only two values, the square 
+		root of the product of the two values is the geometric mean. For three 
+		values, the cube-root is used, and so on.
+		\item When calculating the arithmetic mean, the values can be positive, 
+		negative, or zero.
+		
+		\item The geometric mean is appropriate when the data contains values 
+		with different units of measure, e.g. some measure are height, some are 
+		dollars, some are miles, etc.
+		\item The geometric mean does not accept negative or zero values, e.g. 
+		all values must be positive.
+	\end{itemize}
+\end{frame}
+
+
+\begin{frame}[t]{Harmonic Mean of a Dataset}
+	\begin{itemize}
+		\item The harmonic mean is calculated as the number of values $n$ 
+		divided 
+		by the sum of the reciprocal of the values (1 over each value).
+		
+		$$HM =  \frac{n}{(\frac{1}{x_1} + \frac{1}{x_2} + … + \frac{1}{x_n})}$$
+		\item The harmonic mean is the appropriate mean if the data is 
+		comprised of rates.
+		
+		\item Recall that a rate is the ratio between two quantities with 
+		different measures, e.g. speed, acceleration, frequency, etc.
+		\item The harmonic mean does not take rates with a negative or zero 
+		value, e.g. all rates must be positive.
+	\end{itemize}
+\end{frame}
+
+

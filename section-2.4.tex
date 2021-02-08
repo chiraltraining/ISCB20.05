@@ -1,0 +1,237 @@
+% Slide-n
+\begin{frame}[t]{Measures of Spread}
+	\begin{itemize}
+		\item Range (max - min)
+		\item Inter-quartile range (IQR)
+		\item Standard deviation and variance
+	\end{itemize}
+\end{frame}
+
+% Slide-n
+\begin{frame}[t]{Minimum}
+\textbf{Example:}	Five systolic blood pressures (mmHg) (n = 5) \\
+	120, 80, 90, 110, 95
+	\begin{itemize}
+		\item Minimum Value = \fbox{80}
+	\end{itemize}
+\end{frame}
+
+% Slide-n
+\begin{frame}[t]{Maximum}
+\textbf{Example:}	Five systolic blood pressures (mmHg) (n = 5) \\
+	120, 80, 90, 110, 95
+	\begin{itemize}
+		\item Maximum Value = \fbox{120}
+	\end{itemize}
+\end{frame}
+
+% Slide-n
+\begin{frame}[t]{Range}
+ \textbf{Example:}	Five systolic blood pressures (mmHg) (n = 5) \\
+	120, 80, 90, 110, 95
+	
+	$$
+		\fbox{Range = Maximum - Minimum}
+	$$ 
+	
+	\begin{itemize}
+		\item Maximum = 120
+		\item Minimum = 80 
+		\item 	$
+		Range = 120 - 80 = \fbox{40}
+		$ 
+	\end{itemize}
+
+\end{frame}
+
+
+% Slide-n
+\begin{frame}[t]{Impact of Outliers}
+	\textbf{Example:}	Five systolic blood pressures (mmHg) (n = 6) \\
+	120, 80, 90, 110, 95, 500
+	
+	$$
+	\fbox{Range = Maximum - Minimum}
+	$$ 
+	
+	\begin{itemize}
+		\item Maximum = 500
+		\item Minimum = 80 
+		\item 	$
+		Range = 500 - 80 = \fbox{420}
+		$ 
+	\end{itemize}
+\end{frame}
+
+
+% Slide-n
+\begin{frame}[t]{Percentiles}
+	
+	\begin{itemize}
+		\item Divides data into 100 equal parts
+		\item The pth percentile P is the value that is greater than or equal
+		to p percent of the observations.
+		\item Common percentiles are
+		\begin{itemize}
+			\item[--] 25th
+			\item[--] 50th
+			\item[--] 75th
+		\end{itemize}
+	\end{itemize}
+\end{frame}
+
+
+% Slide-n
+\begin{frame}[t]{Method for Calculating Percentiles}
+	\begin{itemize}
+		\item $P_{50}$ = $Q_2$ = middle observation
+		\item $P_{25}$ = $Q_1$ = middle observation of the lower half of
+		observations
+		\item $P_{75}$ = $Q_3$ = middle observation of the upper half of
+		observations
+	\end{itemize}
+\end{frame}
+
+
+% Slide-n
+\begin{frame}[t]{Method for Calculating Percentiles}
+	\textbf{Odd Observations}
+	\begin{itemize}
+		\item $P_{50}$ = $Q_2$ = middle observation
+		\item $P_{25}$ = $Q_1$ = middle observation of the lower half of
+		observations
+		\item $P_{75}$ = $Q_3$ = middle observation of the upper half of
+		observations
+	\end{itemize}
+
+
+	\textbf{Even Observations}
+\begin{itemize}
+	\item $P_{50}$ = $Q_2$ = average of the middle two observations
+	\item $P_{25}$ = $Q_1$ = middle observation of the lower half of n/2
+	observations
+	\item $P_{75}$ = $Q_3$ = middle observation of the upper half of n/2
+	observations
+\end{itemize}
+\end{frame}
+
+% Slide-n
+\begin{frame}[t]{Percentiles: Examples--1}
+\textbf{Problem-1:} Sample height(cm) of 9 graduate students 168, 170, 150, 
+160, 182, 140, 175, 180, 170(odd observations)
+\end{frame}
+
+
+\begin{frame}[t]{Percentiles: Examples--2}
+	\textbf{Problem-2:} Sample height(cm) of 10 graduate students 168, 170, 
+	150, 
+	160, 182, 140, 175, 180, 170, 190(even observations)
+\end{frame}
+
+
+
+% Slide-n
+\begin{frame}[t]{Inter Quartile Range(IQR)}
+	$$
+	IQR = Q_3 - Q_1
+	$$
+\end{frame}
+
+% Slide-n
+\begin{frame}[t]{Why IQR?}
+	The primary advantage of using the interquartile range rather than the 
+	range for the
+	measurement of the spread of a data set is that the interquartile range is 
+	not sensitive to outliers.
+	
+	\textbf{Example:}	Five systolic blood pressures (mmHg) (n = 6) \\
+	120, 80, 90, 110, 95, 500
+\end{frame}
+
+% Slide-n
+\begin{frame}[t]{Outlier Detection}
+	\textbf{Example:}	Five systolic blood pressures (mmHg) (n = 6) \\
+	120, 80, 90, 110, 95, 500
+	
+	$$
+	[Q_1 - 1.5IQR, Q3+1.5IQR]
+	$$
+	
+	
+	
+\end{frame}
+
+
+\begin{frame}[t]{Five Number Summary}
+	\textbf{Dataset:} Sample height(cm) of 10 graduate students 168, 170, 
+	150, 160, 182, 140, 175, 180, 170, 190
+	
+	\begin{itemize}
+		\item Min
+		\item $Q_1$
+		\item $Q_2$ or Median or 50th Percentile
+		\item $Q_3$
+		\item Max
+	\end{itemize}
+\end{frame}
+
+
+
+
+% Slide-n
+\begin{frame}[t]{Variance}
+	\textbf{Dataset:} Sample height(cm) of 10 graduate students 168, 170, 
+	150, 160, 182, 140, 175, 180, 170, 190
+	\begin{enumerate}
+		\item Calculate the center value/mean 
+		\item Subtract each value from the mean and square all of them
+		\item Calculate the sum of squared values 
+		\item Divide the sum by the number of values 
+	\end{enumerate}
+\end{frame}
+
+\begin{frame}[t]{Population vs Sample Variance}
+	\begin{center}
+		\begin{tabular}{|c|c|} 
+			\hline 
+			Population & Sample \\ 
+			\hline 
+			$\sigma^2  = \frac{\sum_{i=1}^{n} (x_i - \overline{x}) }{n}$ & 
+			$ s^2  = 
+			\frac{\sum_{i=1}^{n} 
+				(x_i - \overline{x}) }{n-1}$ \\
+			\hline
+			$\sigma^2$ =  population variance  & $s^2$ = sample variance\\ 
+			\hline 
+		\end{tabular}
+	\end{center}
+\end{frame}
+
+
+% Slide-n
+\begin{frame}[t]{Standard Deviation}
+	\textbf{Dataset:} Sample height(cm) of 10 graduate students 168, 170, 
+	150, 160, 182, 140, 175, 180, 170, 190
+	$$
+	SD = \sqrt{Variance}
+	$$ 
+\end{frame}
+
+% Slide-n
+\begin{frame}[t]{Summary Statistics}
+	\textbf{Dataset:} Sample height(cm) of 10 graduate students 168, 170, 
+	150, 160, 182, 140, 175, 180, 170, 190
+	
+	\begin{itemize}
+		\item Min
+		\item $Q_1$ or 25th Percentile 
+		\item $Q_2$ or Median or 50th Percentile
+		\item $Q_3$ or 75th Percentile 
+		\item Max
+		\item Mean 
+		\item Standard Deviation
+	\end{itemize}
+\end{frame}
+
+
+
